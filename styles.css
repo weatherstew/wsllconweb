@@ -1,0 +1,112 @@
+/* Incorporate your CSS file */
+body {
+    margin: 0;
+    font-family: 'Caprasimo', serif; /* From your CSS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #a6dde9; /* From SCSS $info */
+    color: #808080; /* From SCSS $body-color */
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.caprasimo-regular {
+    font-family: 'Caprasimo', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-serif-regular {
+    font-family: 'Noto Serif', serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+.privacy-content {
+    line-height: 1.6;
+}
+
+.privacy-list li {
+    margin-bottom: 1rem;
+}
+
+.privacy-section {
+    margin-bottom: 2rem;
+}
+
+.privacy-section h5 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.privacy-section ul {
+    padding-left: 1.5rem;
+}
+
+.privacy-section ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* Override Bootstrap colors */
+:root {
+    --primary: #793722;
+    --secondary: #C07e31;
+    --success: #52934A;
+    --danger: #C32126;
+    --info: #a6dde9;
+    --warning: #fcb817;
+    --light: #e6e6e6;
+    --dark: #808080;
+}
+
+.bg-primary, .btn-primary { background-color: #793722 !important; }
+.text-primary { color: #793722 !important; }
+.bg-secondary, .btn-secondary { background-color: #C07e31 !important; }
+.text-secondary { color: #C07e31 !important; }
+.bg-success, .btn-success { background-color: #52934A !important; }
+.text-success { color: #52934A !important; }
+.bg-danger, .btn-danger { background-color: #C32126 !important; }
+.text-danger { color: #C32126 !important; }
+.bg-info { background-color: #a6dde9 !important; }
+.text-info { color: #a6dde9 !important; }
+.bg-warning, .btn-warning { background-color: #fcb817 !important; }
+.text-warning { color: #fcb817 !important; }
+.bg-light { background-color: #e6e6e6 !important; }
+.text-light { color: #e6e6e6 !important; }
+.bg-dark, .navbar-dark { background-color: #808080 !important; }
+.text-dark { color: #808080 !important; }
+
+/* Additional styles from boilerplate */
+.section {
+    padding: 60px 0;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #808080; /* $dark */
+    color: #e6e6e6; /* $light */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 200px;
+    }
+}

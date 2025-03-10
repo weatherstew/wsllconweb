@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Title - WeatherStew Studio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/images/favicon_io/site.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts from CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Game-specific CSS -->
+    <link rel="stylesheet" href="game-specific.css">
+</head>
+<body class="text-center" style="color: #222;">
+
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffc107 !important;">
+        <a class="navbar-brand" href="../../index.html" style="color: #222;">WeatherStew</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #222;">
+            <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27%23222222%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="../../index.html#home" style="color: #222;">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../index.html#about" style="color: #222;">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../index.html#games" style="color: #222;">Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../index.html#contact" style="color: #222;">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="../../privacy.html" style="color: #222;">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="game-container" class="section container text-center">
+            <h1>Game Title</h1>
+            
+            <div class="game-wrapper">
+                <!-- Game canvas or iframe will go here -->
+                <div id="game-canvas" class="mb-4">
+                    <!-- Replace this with your game's canvas or embed code -->
+                    <div style="width: 800px; height: 600px; background-color: #333; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white;">
+                        Game Canvas Placeholder
+                    </div>
+                </div>
+                
+                <div class="game-controls mb-4">
+                    <h3>Controls</h3>
+                    <ul class="list-unstyled">
+                        <li>WASD or Arrow Keys - Move</li>
+                        <li>Space - Jump/Action</li>
+                        <li>Mouse - Aim/Look</li>
+                        <!-- Add more controls as needed -->
+                    </ul>
+                </div>
+                
+                <div class="game-description">
+                    <h3>About This Game</h3>
+                    <p>
+                        Description of the game goes here. Explain the concept, goals, and any other relevant information.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center py-3" style="background-color: #ffc107 !important;">
+        <p style="color: #222; margin-bottom: 0;">© 2025 WeatherStew Studio</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Main site script -->
+    <script src="../js/script.js"></script>
+    <!-- Game-specific script -->
+    <script src="game-script.js"></script>
+</body>
+</html> 

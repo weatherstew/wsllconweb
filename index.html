@@ -3,98 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherStew Studio</title>
+    <title>weatherstew</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Google Fonts from CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-<body>
+<body class="text-center" style="color: #222;">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#home">WeatherStew</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffc107 !important;">
+        <a class="navbar-brand" href="#home" style="color: #222;">weatherstew</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #222;">
+            <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27%23222222%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#privacy">Privacy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#home" style="color: #222;">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" style="color: #222;">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#games" style="color: #222;">Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" style="color: #222;">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="privacy.html" style="color: #222;">Privacy</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="content">
-        <section id="home" class="section full-height d-flex align-items-center justify-content-center">
-            <img src="path/to/logo.png" alt="WeatherStew Logo" class="logo">
+        <section id="home" class="section full-height container-fluid d-flex flex-column justify-content-center">
+            <h1 class="mx-auto" style="font-family: 'Caprasimo', cursive; color: #222;">weatherstew</h1>
+            <img 
+                src="assets/images/logo_single_animation.gif" 
+                alt="weatherstew Logo" 
+                class="img-fluid" 
+                style="max-height: 75vh; object-fit: contain;"
+            >
         </section>
 
-        <section id="about" class="section container">
-            <h1>About WeatherStew</h1>
-            <p>We’re a passionate game development studio creating unique experiences. [Add your story here.]</p>
+        <section id="about" class="section container text-center">
+            <h1 style="font-family: 'Caprasimo', cursive; color: #222;">About weatherstew</h1>
+            <p style="color: #222; font-weight: 500; line-height: 1.6;">
+              We're weatherstew, an indie game studio dedicated to making fun
+              and relaxing games that we would want to play ourselves, which
+              means you can count on seeing lots of cute characters, wholesome
+              themes, bright happy colors, and whimsical sound effects!
+            </p>
+            <p style="color: #222; font-weight: 500; line-height: 1.6;">
+              It also means NO ADS EVER!
+            </p>
+            <p style="color: #222; font-weight: 500; line-height: 1.6;">
+              Baby, you got a stew goin'!
+            </p>
         </section>
 
-        <section id="games" class="section container">
-            <h1>Our Games</h1>
+        <section id="games" class="section container text-center">
+            <h1 style="font-family: 'Caprasimo', cursive; color: #222;">Our Games</h1>
             <div class="row" id="games-list">
-            <div class="col-md-4">
+            <div class="col-md-4 mx-auto">
                 <div class="card mb-4">
-                <img src="path/to/game1.jpg" class="card-img-top" alt="Game 1">
+                <img src="assets/images/normal_idle.png" class="card-img-top" alt="Game 1">
                 <div class="card-body">
-                    <h5 class="card-title">Game 1</h5>
-                    <p class="card-text">A thrilling adventure. [Add description.]</p>
+                    <h5 class="card-title" style="font-family: 'Caprasimo', cursive; color: #222;">Game 1</h5>
+                    <p class="card-text" style="color: #222; font-weight: 500;">A thrilling adventure. [Add description.]</p>
+                    <a href="assets/games/game-template.html" class="btn btn-primary">Play Now</a>
                 </div>
                 </div>
             </div>
             </div>
         </section>
 
-        <section id="contact" class="section container">
-            <h1>Contact Us</h1>
-            <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" required>
+        <section id="contact" class="section container text-center">
+            <h1 style="font-family: 'Caprasimo', cursive; color: #222;">Contact & Social</h1>
+            <p style="color: #222; font-weight: 500; line-height: 1.6; margin-bottom: 20px;">
+                Have questions or feedback? Contact Carl, our Customer and Relations Liaison (C.A.R.L.).
+            </p>
+            <p style="color: #222; font-weight: 500; line-height: 1.6; margin-bottom: 20px;">
+                carl@weatherstew.com
+            </p>
+            <div class="mb-4">
+                <a href="mailto:carl@weatherstew.com?subject=weatherstew%20Contact" class="btn btn-primary mb-3">
+                    <i class="bi bi-envelope-fill me-2"></i> Email Carl
+                </a>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" required>
+            <h2 style="font-family: 'Caprasimo', cursive; color: #222; font-size: 1.5rem; margin-bottom: 20px;">Follow Us</h2>
+            <div class="social-links" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+                <a href="https://www.youtube.com/@weatherstew" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger">
+                    <i class="bi bi-youtube"></i> YouTube
+                </a>
+                <a href="https://x.com/weatherstewtimm" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+                    <i class="bi bi-twitter-x"></i> X
+                </a>
+                <a href="https://github.com/weatherstew/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+                <a href="https://www.reddit.com/user/weatherstew/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-danger">
+                    <i class="bi bi-reddit"></i> Reddit
+                </a>
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-            </form>
         </section>
 
-        <section id="privacy" class="section container">
-            <h1>Privacy Policy</h1>
-            <div class="privacy-content">
-                <p>Your privacy matters to us. [Add your policy here.]</p>
-                <div class="privacy-section">
-                    <h5>Section Title</h5>
-                    <ul class="privacy-list">
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3">
-    <p>© 2025 WeatherStew Studio</p>
+    <footer class="text-center py-3" style="background-color: #ffc107 !important;">
+    <p style="color: #222; margin-bottom: 0;">© 2025 weatherstew llc</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

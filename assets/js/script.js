@@ -8,10 +8,10 @@ document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
   
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
+    const name = document.getElementById('from_name').value;
+    const replyTo = document.getElementById('reply_to').value;
     const message = document.getElementById('message').value;
-    console.log('Form submitted:', { name, email, message });
+    console.log('Form submitted:', { name, replyTo, message });
     alert('Thank you for your message!');
     this.reset();
 });

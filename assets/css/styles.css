@@ -61,6 +61,14 @@ code {
     --warning: #fcb817;
     --light: #e6e6e6;
     --dark: #808080;
+    /* CARL tokens */
+    --carl-paper: #F5EFE4;
+    --carl-felt: #DCE8F0;
+    --carl-walnut: #3B2A1E;
+    --carl-terracotta: #A34E34;
+    --carl-harbour: #3E6E8E;
+    --carl-maple: #EBD3AE;
+    --carl-oak: #A9784A;
 }
 
 .bg-primary, .btn-primary { background-color: #793722 !important; }
@@ -109,4 +117,47 @@ footer {
     .logo {
         max-width: 200px;
     }
+}
+
+/* CARL component styles */
+.carl-panel {
+    background: var(--carl-paper);
+    border-radius: 24px;
+    padding: 32px;
+    width: 66%;
+}
+
+@media (max-width: 767px) {
+    .carl-panel {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.carl-btn {
+    background-color: var(--carl-terracotta);
+    color: #fff;
+    border-color: var(--carl-terracotta);
+}
+
+.carl-btn:hover {
+    background-color: #8a4029;
+    border-color: #8a4029;
+    color: #fff;
+}
+
+.carl-btn:focus {
+    background-color: #8a4029;
+    border-color: #8a4029;
+    color: #fff;
+    outline: 3px solid var(--carl-terracotta);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(163, 78, 52, 0.4);
+}
+
+.carl-pill {
+    background-color: var(--carl-harbour);
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 4px 12px;
 }

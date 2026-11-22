@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weatherstew</title>
+    <title>weatherstew | cozy, ad-free games</title>
+    <meta name="description" content="weatherstew is an indie studio making cozy, ad-free games. Meet CARL: Cozy &amp; Relaxing Letters, a calm daily word game.">
+    <link rel="canonical" href="https://www.weatherstew.com/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="weatherstew">
+    <meta property="og:title" content="weatherstew | cozy, ad-free games">
+    <meta property="og:description" content="weatherstew is an indie studio making cozy, ad-free games. Meet CARL: Cozy &amp; Relaxing Letters, a calm daily word game.">
+    <meta property="og:url" content="https://www.weatherstew.com/">
+    <meta property="og:image" content="https://www.weatherstew.com/assets/images/carl/carl-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="assets/images/favicon_io/apple-touch-icon.png">
@@ -14,12 +27,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts from CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:opsz,wght@9..144,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body class="text-center" style="color: #222;">
 
@@ -32,7 +43,7 @@
             <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#home" style="color: #222;">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about" style="color: #222;">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#games" style="color: #222;">Games</a></li>
+            <li class="nav-item"><a class="nav-link" href="games.html" style="color: #222;">Games</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact" style="color: #222;">Contact</a></li>
             <li class="nav-item"><a class="nav-link" href="privacy.html" style="color: #222;">Privacy</a></li>
             </ul>
@@ -42,10 +53,10 @@
     <div class="content">
         <section id="home" class="section full-height container-fluid d-flex flex-column justify-content-center">
             <h1 class="mx-auto" style="font-family: 'Caprasimo', cursive; color: #222;">weatherstew</h1>
-            <img 
-                src="assets/images/logo_single_animation.gif" 
-                alt="weatherstew Logo" 
-                class="img-fluid" 
+            <img
+                src="assets/images/logo_single_animation.gif"
+                alt="weatherstew Logo"
+                class="img-fluid"
                 style="max-height: 75vh; object-fit: contain;"
             >
         </section>
@@ -66,26 +77,30 @@
             </p>
         </section>
 
-        <section id="games" class="section container text-center">
-            <h1 style="font-family: 'Caprasimo', cursive; color: #222;">Our Games</h1>
-            <div class="row" id="games-list">
-                <div class="col-md-8 mx-auto">
-                    <div class="card mb-4">
-                        <img src="assets/images/App_Icon_With_Costume.png" class="card-img-top" alt="Fart Ascent">
-                        <div class="card-body" style="background-color: #ffc107 !important;">
-                            <h5 class="card-title" style="font-family: 'Caprasimo', cursive; color: #222;">Fart Ascent</h5>
-                            <p class="card-text" style="color: #222; font-weight: 500;">
-                                Embark on a whimsical journey in <strong>Fart Ascent</strong>! Guide Frank Sandbeans through vibrant, cloud-filled skies using the power of farts! This addicting mobile game combines charming visuals, quirky sound effects, and addictive gameplay. Collect power-ups, and soar to new heights in order to collect coins on this delightful, ad-free adventure. Unlock all the costumes to customize your fun! Perfect for a quick laugh or a relaxing play session!
-                            </p>
-                            <a href="https://play.google.com/store/apps/details?id=com.weatherstew.fartascent&pli=1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+        <section id="carl" class="section container">
+            <div class="carl-panel mx-auto">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-left mb-4 mb-md-0">
+                        <img src="assets/images/carl/carl-icon-180.png" alt="" width="96" height="96" style="margin-bottom: 12px; display: block;">
+                        <h1 style="font-family: 'Fraunces', 'Caprasimo', cursive; color: #3B2A1E;">CARL</h1>
+                        <h2 style="font-family: 'Caprasimo', cursive; color: #A34E34; font-size: 1.5rem;">Cozy &amp; Relaxing Letters</h2>
+                        <p style="color: #3B2A1E; font-weight: 500; line-height: 1.6;">CARL is a calm daily word game. Everyone gets the same board each day, you get your own handful of letters, and you build a little crossword at your own pace. Find your words, chase a high score, and enjoy a few quiet minutes with a cup of something warm.</p>
+                        <span class="badge carl-pill mb-3">Web pilot coming soon</span>
+                        <div style="margin-top: 8px;">
+                            <a href="https://playcarl.com" class="btn carl-btn mr-2 mb-2" target="_blank" rel="noopener noreferrer">Try the demo <span class="sr-only">(opens in a new tab)</span></a>
+                            <a href="games.html" class="btn btn-outline-dark mb-2">See all our games</a>
                         </div>
                     </div>
+                    <div class="col-md-6 text-center">
+                        <img src="assets/images/carl/carl-phone-mockup.png" alt="CARL on a phone, showing today's word board with bonus squares" class="img-fluid" width="376" height="661" style="max-height: 520px; object-fit: contain;" loading="lazy">
+                    </div>
                 </div>
+                <p class="mt-3 text-muted" style="font-size: 0.8rem;">Some in-game icons shown in CARL screenshots are by <a href="https://www.flaticon.com/authors/magnific" target="_blank" rel="noopener noreferrer">Magnific<span class="sr-only"> (opens in a new tab)</span></a> from <a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer">Flaticon<span class="sr-only"> (opens in a new tab)</span></a>.</p>
             </div>
         </section>
 
         <section id="contact" class="section container text-center">
-            <h1 style="font-family: 'Caprasimo', cursive; color: #222;">Contact & Social</h1>
+            <h1 style="font-family: 'Caprasimo', cursive; color: #222;">Contact &amp; Social</h1>
             <p style="color: #222; font-weight: 500; line-height: 1.6; margin-bottom: 20px;">
                 Have questions or feedback? Contact Carl, our Customer and Relations Liaison (C.A.R.L.).
             </p>
@@ -117,7 +132,7 @@
     </div>
 
     <footer class="text-center py-3" style="background-color: #ffc107 !important;">
-    <p style="color: #222; margin-bottom: 0;">© 2025 weatherstew llc</p>
+    <p style="color: #222; margin-bottom: 0;">© 2026 weatherstew llc</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
